@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blurred1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="blurred-background"></div>
+    <div class="registration-container">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back</a>
+        <h2 class="registration-heading"><i class="fas fa-user-plus"></i>Register Here!</h2>
+        <div class="registration-form" action="#" method="post">
+            <div class="input-group-container">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group-container">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="input-group-container">
+                <label for="middle-name">Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name">
+            </div>
+            <div class="input-group-container">
+                <label for="extension-name">Extension Name:</label>
+                <select id="extension-name" name="extension-name">
+                    <option value="None">None</option>
+                    <option value="Jr">Jr</option>
+                    <option value="Sr">Sr</option>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                </select>
+            </div>
+            <div class="input-group-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input-group-container password-input-group">
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="show-password-icon">👁️</span>
+            </div>
+            <div class="input-group-container password-input-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="show-password-icon">👁️</span>
+            </div>
+            <div class="input-group-container">
+                <input type="checkbox" id="terms-condition" name="terms-condition" required>
+                <label for="terms-condition">I agree to the <a href="Terms.html">Terms and Conditions.</a></label><br>
+            </div>
+            <a href="home.html"><button type="submit" class="register-btn">Register</button></a>
+            <p>Already have an account? <a href="index.html">Log in</a>.</p>
+        </form>
+    </div>
+</body>
+</html>

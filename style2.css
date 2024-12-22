@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-for-login {  
+  position: relative;
+  background-color: rgba(95, 92, 92, 0.5);
+  padding: 30px; 
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px; 
+  box-shadow:0 0 50px rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+
+.profile-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.profile-heading i {
+  margin-right:10px;
+}
+
+h1, h5 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+input[type="text"], input[type="password"] {
+  width: calc(100% - 40px); 
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+  border-color: blue;
+}
+
+.show-password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.show-password-icon:hover {
+  color: blue; 
+}
+
+.remember-me {
+  margin-top: 10px; 
+}
+
+.remember-me label {
+  margin-left: 5px; 
+}
+.login-btn {
+  width: 100px; 
+  padding: 10px;
+  border: 2px solid black; 
+  background-color: whitesmoke;  
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button.login-btn:hover {
+  background-color: #94f00bde; 
+  color: white;
+}
+.back-btn {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: black;  
+}
+
+.back-btn:hover {
+  background-color: #4CAF50;
+  transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+a{
+  color: rgb(7, 226, 246);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-btn {
+  margin-left: auto;
+  margin-top: 10px;
+}

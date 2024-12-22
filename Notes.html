@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="MIUSC LOGO.png" type="image/x-icon">
+</head>
+<div>
+    <header>
+        <div class="dashboard-section">
+            <a href="home.html"><img src="MIUSC LOGO.png" alt="School Icon"></a>
+            <h3>Notes</h3>
+        </div>
+    </div>    
+    <div class="sidebar-trigger" onclick="toggleSidebar()">
+        <span id="menu-icon"><i class="fas fa-bars"></i> Menu</span>
+    </div>
+    <header class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><i class="fas fa-book"></i> <a href="subject.html">Subjects</a></li>
+                <li><i class="fas fa-tasks"></i> <a href="My Ass.html">My Assignments</a></li>
+                <li><i class="fas fa-sticky-note"></i> <a href="Notes.html">Notes</a></li>
+                <li><i class="fas fa-calendar-alt"></i> <a href="Quizzes.html">Quizzes</a></li>
+            </ul>
+            <span class="close-icon" onclick="toggleSidebar()"><i class="fas fa-times"></i></span>
+        </nav>
+    </header>
+</div>
+<body>
+    <div class="important-notice-container">
+        <h2>My Notes</h2>
+        <div class="important-notice-content">
+            <p>No Saved Notes.</p>
+            <hr>
+        </div>
+    </div>
+</body>
+<hr>
+    <footer>
+            <p>&copy; 2024 MIUSC. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var menuIcon = document.getElementById("menu-icon");
+            var closeIcon = document.querySelector(".sidebar .close-icon");
+            if (sidebar.style.left === "0px" || sidebar.style.left === "") {
+                sidebar.style.left = "-200px";
+                menuIcon.style.display = "inline-block";
+                closeIcon.style.display = "none";
+            } else {
+                sidebar.style.left = "0px";
+                menuIcon.style.display = "none";
+                closeIcon.style.display = "inline-block";
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>MIUSC</title>
+    <link rel="icon" href="MIUSC LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="blurred-background"></div>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <a href="index.html"><img src="MIUSC LOGO.png" alt="School Icon"></a>
+                <h1>Mars Intergalactic Universal State College (MIUSC)</h1>
+            </div>
+            <div class="login-section">
+                <a href="studentlogin.html"><button class="login-btn">Student Login</button></a>
+                <a href="teacherlogin.html"><button class="login-btn">Teacher Login</button></a>
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="sidebar-trigger" onclick="toggleSidebar()">
+        <span id="menu-icon"><i class="fas fa-bars"></i> Menu</span>
+    </div>
+    
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="studentlogin.html">Student Login</a></li>
+                <li><a href="teacherlogin.html">Teacher Login</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="Terms.html">Terms And Conditions</a></li>
+                
+            </ul>
+            <span class="close-icon" onclick="toggleSidebar()"><i class="fas fa-times"></i></span>
+        </nav>
+    </div>
+    
+    <div class="main-slider">
+        <div class="slider-content">
+            <div class="slider-text">
+                <h2>Limit of Wisdom is Endless.</h2>
+                <p>Everything in the cosmos is filled with unknown mysteries.</p>
+            </div>
+            <div class="image-box">
+                <img src="astro.gif" alt="GIF Image">
+            </div>
+        </div>
+        <img src="miusc.png" alt="miusc-image">
+    </div>
+    
+    
+
+    <main>
+        <div class="container2">
+            <div class="content-box">
+                <h2>Welcome to MIUSC</h2>
+                <p>Embark on a journey of knowledge at Mars Intergalactic Universal State College (MIUSC), where the mysteries of the cosmos await your exploration. Join us as we push the boundaries of education beyond Earth!</p>
+            </div>
+        </div>        
+        <div class="container2">
+            <div class="content-box">
+                <h2>About Mars Intergalactic Universal State College</h2>
+                <p>Welcome to Mars Intergalactic Universal State College (MIUSC), where education knows no bounds! Nestled in the heart of Mars, MIUSC is a trailblazer in intergalactic education, offering cutting-edge programs in astrophysics, robotics, and more.</p>
+                <p>Our mission is simple: to prepare students for the challenges and opportunities of the cosmos. With state-of-the-art facilities and a team of stellar educators, MIUSC is your launchpad to the stars!</p>
+            </div>
+        </div>
+        </div>
+        <div class="container2">
+            <div class="content-box">
+                <h2>Contact Us</h2>
+                <p>Email: info@miusc.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+            <p>&copy; 2024 MIUSC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var menuIcon = document.getElementById("menu-icon");
+            var closeIcon = document.querySelector(".sidebar .close-icon");
+            if (sidebar.style.left === "0px" || sidebar.style.left === "") {
+                sidebar.style.left = "-200px";
+                menuIcon.style.display = "inline-block";
+                closeIcon.style.display = "none";
+            } else {
+                sidebar.style.left = "0px";
+                menuIcon.style.display = "none";
+                closeIcon.style.display = "inline-block";
+            }
+        }
+    </script>
+    
+</body>
+</html>
